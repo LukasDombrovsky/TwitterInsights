@@ -1,0 +1,272 @@
+[
+    {
+    "hashtag":  "#Auto" ,
+    "count":  125 ,
+    "countPercentage":  24 ,
+    "trait":  "Openness" ,
+    "traitPercentage":  30 ,
+    "sentimentScore":  44 ,
+    "sentimentLabel":  "positive"  
+    },
+    {
+    "hashtag":  "#Auto" ,
+    "count":  125 ,
+    "countPercentage":  24 ,
+    "trait":  "Anger" ,
+    "traitPercentage":  27 ,
+    "sentimentScore":  44 ,
+    "sentimentLabel":  "positive"  
+    },
+    {
+    "hashtag":  "#Auto" ,
+    "count":  125 ,
+    "countPercentage":  24 ,
+    "trait":  "Depression" ,
+    "traitPercentage":  50 ,
+    "sentimentScore":  44 ,
+    "sentimentLabel":  "positive"  
+    },
+    {
+    "hashtag":  "#Auto" ,
+    "count":  125 ,
+    "countPercentage":  24 ,
+    "trait":  "Challenge" ,
+    "traitPercentage":  21 ,
+    "sentimentScore":  44 ,
+    "sentimentLabel":  "positive"  
+    },
+    {
+    "hashtag":  "#Auto" ,
+    "count":  125 ,
+    "countPercentage":  24 ,
+    "trait":  "Curiosity" ,
+    "traitPercentage":  26 ,
+    "sentimentScore":  44 ,
+    "sentimentLabel":  "positive"  
+    },
+    {
+    "hashtag":  "#Auto" ,
+    "count":  125 ,
+    "countPercentage":  24 ,
+    "trait":  "Excitement" ,
+    "traitPercentage":  26 ,
+    "sentimentScore":  44 ,
+    "sentimentLabel":  "positive"  
+    },
+    {
+    "hashtag":  "#Strategy" ,
+    "count":  125 ,
+    "countPercentage":  24 ,
+    "trait":  "Openness" ,
+    "traitPercentage":  41 ,
+    "sentimentScore":  69 ,
+    "sentimentLabel":  "positive"  
+    },
+    {
+    "hashtag":  "#Strategy" ,
+    "count":  125 ,
+    "countPercentage":  24 ,
+    "trait":  "Anger" ,
+    "traitPercentage":  3 ,
+    "sentimentScore":  69 ,
+    "sentimentLabel":  "positive"  
+    },
+    {
+    "hashtag":  "#Strategy" ,
+    "count":  125 ,
+    "countPercentage":  24 ,
+    "trait":  "Depression" ,
+    "traitPercentage":  16 ,
+    "sentimentScore":  69 ,
+    "sentimentLabel":  "positive"  
+    },
+    {
+    "hashtag":  "#Strategy" ,
+    "count":  125 ,
+    "countPercentage":  24 ,
+    "trait":  "Challenge" ,
+    "traitPercentage":  89 ,
+    "sentimentScore":  69 ,
+    "sentimentLabel":  "positive"  
+    },
+    {
+    "hashtag":  "#Strategy" ,
+    "count":  125 ,
+    "countPercentage":  24 ,
+    "trait":  "Curiosity" ,
+    "traitPercentage":  66 ,
+    "sentimentScore":  69 ,
+    "sentimentLabel":  "positive"  
+    },
+    {
+    "hashtag":  "#Strategy" ,
+    "count":  125 ,
+    "countPercentage":  24 ,
+    "trait":  "Excitement" ,
+    "traitPercentage":  67 ,
+    "sentimentScore":  69 ,
+    "sentimentLabel":  "positive"  
+    },
+    {
+    "hashtag":  "#AI" ,
+    "count":  102 ,
+    "countPercentage":  19 ,
+    "trait":  "Openness" ,
+    "traitPercentage":  51 ,
+    "sentimentScore":  0 ,
+    "sentimentLabel":  "neutral"  
+    },
+    {
+    "hashtag":  "#AI" ,
+    "count":  102 ,
+    "countPercentage":  19 ,
+    "trait":  "Anger" ,
+    "traitPercentage":  74 ,
+    "sentimentScore":  0 ,
+    "sentimentLabel":  "neutral"  
+    },
+    {
+    "hashtag":  "#AI" ,
+    "count":  102 ,
+    "countPercentage":  19 ,
+    "trait":  "Depression" ,
+    "traitPercentage":  51 ,
+    "sentimentScore":  0 ,
+    "sentimentLabel":  "neutral"  
+    },
+    {
+    "hashtag":  "#AI" ,
+    "count":  102 ,
+    "countPercentage":  19 ,
+    "trait":  "Challenge" ,
+    "traitPercentage":  79 ,
+    "sentimentScore":  0 ,
+    "sentimentLabel":  "neutral"  
+    },
+    {
+    "hashtag":  "#AI" ,
+    "count":  102 ,
+    "countPercentage":  19 ,
+    "trait":  "Curiosity" ,
+    "traitPercentage":  90 ,
+    "sentimentScore":  0 ,
+    "sentimentLabel":  "neutral"  
+    },
+    {
+    "hashtag":  "#AI" ,
+    "count":  102 ,
+    "countPercentage":  19 ,
+    "trait":  "Excitement" ,
+    "traitPercentage":  54 ,
+    "sentimentScore":  0 ,
+    "sentimentLabel":  "neutral"  
+    },
+    {
+    "hashtag":  "#Watson" ,
+    "count":  93 ,
+    "countPercentage":  18 ,
+    "trait":  "Openness" ,
+    "traitPercentage":  13 ,
+    "sentimentScore":  77 ,
+    "sentimentLabel":  "positive"  
+    },
+    {
+    "hashtag":  "#Watson" ,
+    "count":  93 ,
+    "countPercentage":  18 ,
+    "trait":  "Anger" ,
+    "traitPercentage":  72 ,
+    "sentimentScore":  77 ,
+    "sentimentLabel":  "positive"  
+    },
+    {
+    "hashtag":  "#Watson" ,
+    "count":  93 ,
+    "countPercentage":  18 ,
+    "trait":  "Depression" ,
+    "traitPercentage":  69 ,
+    "sentimentScore":  77 ,
+    "sentimentLabel":  "positive"  
+    },
+    {
+    "hashtag":  "#Watson" ,
+    "count":  93 ,
+    "countPercentage":  18 ,
+    "trait":  "Challenge" ,
+    "traitPercentage":  67 ,
+    "sentimentScore":  77 ,
+    "sentimentLabel":  "positive"  
+    },
+    {
+    "hashtag":  "#Watson" ,
+    "count":  93 ,
+    "countPercentage":  18 ,
+    "trait":  "Curiosity" ,
+    "traitPercentage":  56 ,
+    "sentimentScore":  77 ,
+    "sentimentLabel":  "positive"  
+    },
+    {
+    "hashtag":  "#Watson" ,
+    "count":  93 ,
+    "countPercentage":  18 ,
+    "trait":  "Excitement" ,
+    "traitPercentage":  36 ,
+    "sentimentScore":  77 ,
+    "sentimentLabel":  "positive"  
+    },
+    {
+    "hashtag":  "#Cognitive" ,
+    "count":  85 ,
+    "countPercentage":  16 ,
+    "trait":  "Openness" ,
+    "traitPercentage":  20 ,
+    "sentimentScore":  66 ,
+    "sentimentLabel":  "positive"  
+    },
+    {
+    "hashtag":  "#Cognitive" ,
+    "count":  85 ,
+    "countPercentage":  16 ,
+    "trait":  "Anger" ,
+    "traitPercentage":  54 ,
+    "sentimentScore":  66 ,
+    "sentimentLabel":  "positive"  
+    },
+    {
+    "hashtag":  "#Cognitive" ,
+    "count":  85 ,
+    "countPercentage":  16 ,
+    "trait":  "Depression" ,
+    "traitPercentage":  60 ,
+    "sentimentScore":  66 ,
+    "sentimentLabel":  "positive"  
+    },
+    {
+    "hashtag":  "#Cognitive" ,
+    "count":  85 ,
+    "countPercentage":  16 ,
+    "trait":  "Challenge" ,
+    "traitPercentage":  60 ,
+    "sentimentScore":  66 ,
+    "sentimentLabel":  "positive"  
+    },
+    {
+    "hashtag":  "#Cognitive" ,
+    "count":  85 ,
+    "countPercentage":  16 ,
+    "trait":  "Curiosity" ,
+    "traitPercentage":  94 ,
+    "sentimentScore":  66 ,
+    "sentimentLabel":  "positive"  
+    },
+    {
+    "hashtag":  "#Cognitive" ,
+    "count":  85 ,
+    "countPercentage":  16 ,
+    "trait":  "Excitement" ,
+    "traitPercentage":  40 ,
+    "sentimentScore":  66 ,
+    "sentimentLabel":  "positive"  
+    } 
+]

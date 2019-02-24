@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Twitter Insights</title>
+  
+    <!-- Bootstrap Core CSS -->
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+
+    <!-- Custom Fonts -->   
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="css/magnific-popup.css" rel="stylesheet">
+
+    <!-- CSSs -->
+    <link href="css/creative.css" rel="stylesheet">
+    <link href="css/percent.css" rel="stylesheet">
+    <link href="css/sparkleProgressbar.css" rel="stylesheet">
+    <link href="css/sentiment.css" rel="stylesheet">
+
+    <!-- Dropdown -->
+    <link href="css/dropdown.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body id="page-top" ng-app="Portfolio" ng-controller="TwitterInsightsController">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                  <img src="img/TI_logo.png" id="headerLogo">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#insights">Insights</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading">Twitter Insights</h1>
+                <hr>
+                <p>What people on Twitter think about IBM? See it using our app!<br />
+                   Our app downloads data realated to IBM, finds out most used hashtags,
+                   downloads related data again and sends them to Watson Natural Language Processing
+                   and Watson Personality Insights APIs for analysis which is visualized right below.</p>
+                <a href="#insights" class="btn btn-primary btn-xl page-scroll">Get insights!</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="insights">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Explore Insights</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-12 col-sm-12" id="DD">
+                <!-- Index is messed up so put your top selection last-->
+                <!-- then use normal order-->
+                <div ng-class="dropdownClass">
+                    <div ng-repeat="item in hashtags track by $index" ng-class="itemClass" ng-click="startHashtagAnalysis($index)" ng-bind="item.hashtag"></div>
+                    <div ng-class="itemClass" ng-click="changeClass()">Select one of top three hashtags</div>
+                </div>
+              </div>
+            </div>
+
+            <div id="widgetSection">
+
+            <div class="row">
+                
+                    <div class="col-md-4 col-sm-4">
+                        <div class="progress-pie-chart">
+                        <div class="ppc-progress">
+                            <div class="ppc-progress-fill"></div>
+                        </div>
+                        <div class="ppc-percents">
+                            <div class="pcc-percents-wrapper">
+                            <span>%</span>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="ppc-percents-text">
+                        % from top hashtags
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4">
+                        <div id="hastagTitle" ng-bind="selectedHashtag"></div>
+                    </div>
+                    
+                    <div class="col-md-4 col-sm-4">
+                        <div class="progress-pie-chart-sentiment">
+                        <div class="ppc-progress-sentiment">
+                            <div class="ppc-progress-fill-sentiment"></div>
+                        </div>
+                        <div class="ppc-percents-sentiment">
+                            <div class="pcc-percents-wrapper-sentiment">
+                            <span class="sentimentSpan">%</span>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="ppc-percents-text-sentiment"></div>
+                    </div>
+                </div>              
+            
+
+            <div class="row">
+              <div class="sparkleProgressbar" index="1" emotion="Openness">
+              	<div class="sparkleBar"><span></span></div>
+              	<div class="sparkleLabel"><span></span><div class="perc"></div></div>
+              </div>
+              
+              <div class="sparkleProgressbar" index="2" emotion="Anger">
+              	<div class="sparkleBar color2"><span></span></div>
+              	<div class="sparkleLabel"><span></span><div class="perc"></div></div>
+              </div>
+              
+              <div class="sparkleProgressbar" index="3" emotion="Depression">
+              	<div class="sparkleBar color3"><span></span></div>
+              	<div class="sparkleLabel"><span></span><div class="perc"></div></div>
+              </div>
+              
+              <div class="sparkleProgressbar" index="4" emotion="Challenge">
+              	<div class="sparkleBar color4"><span></span></div>
+              	<div class="sparkleLabel"><span></span><div class="perc"></div></div>
+              </div>
+              
+              <div class="sparkleProgressbar" index="5" emotion="Curiosity">
+              	<div class="sparkleBar color5"><span></span></div>
+              	<div class="sparkleLabel"><span></span><div class="perc"></div></div>
+              </div>
+              
+              <div class="sparkleProgressbar" index="6" emotion="Excitement">
+              	<div class="sparkleBar color6"><span></span></div>
+              	<div class="sparkleLabel"><span></span><div class="perc"></div></div>
+              </div>
+            </div>
+          
+        </div>
+        </div>
+    </section>
+    
+    <aside class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h2>IBM | 2017</h2>
+                <hr class="primary">
+            </div>
+            <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-phone fa-3x sr-contact"></i>
+                    <p>+421-911-126-394</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                    <p><a href="mailto:lukas.dombrovsky@gmail.com">lukas.dombrovsky@gmail.com</a></p>
+                </div>
+        </div>
+    </aside>
+     <!-- External scripts -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular-animate.min.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular-route.min.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular-aria.min.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular-messages.min.js'></script>
+    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-114/svg-assets-cache.js'></script>
+    <script src='https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.7/angular-material.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular-sanitize.js'></script>    
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+    <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.5.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+    <!-- jQuery -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/creative.min.js"></script>
+    
+    <!-- Percentage indicator -->
+    <!-- <script src="js/main.js"></script>         -->
+
+    <!-- Dropdown -->
+    <!-- <script  src="js/dropdown.js"></script>  -->
+
+    <!-- app -->
+    <script src="js/app.js"></script>
+
+    <!-- Controller -->
+    <script src="js/TwitterInsightsController.js"></script>
+    
+
+</body>
+
+</html>
